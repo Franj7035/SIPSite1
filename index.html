@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #bb86fc;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        /* Parallax Background */
+        .parallax {
+            background-image: url('MulticoloredBack.jpg'); /* Replace with your background image */
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .name-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow for visibility */
+        }
+
+        /* Hero Section */
+        #hero {
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8); /* Adds contrast after parallax */
+            margin-top: -100px; /* Blends into the background smoothly */
+            padding-top: 100px;
+        }
+
+        .content {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 32px;
+            color: #bb86fc;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .image-container img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 3px solid #bb86fc;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sip.html">SIP</a></li>
+                <li><a href="boards.html">Boards</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Parallax Background Section -->
+    <section class="parallax">
+        <div class="name-overlay">
+            <h1>Francisco J. Hernandez Sanchez</h1>
+        </div>
+    </section>
+
+    <main>
+        <section id="hero">
+            <div class="content">
+                <h2>Welcome to My Portfolio</h2>
+                <p>
+                    My name is Francisco Jair Hernandez Sanchez, and I am currently pursuing a degree in Advertising Arts at UAT. 
+                    I am passionate about web design and programming, and I am dedicated to improving my skills in both areas. 
+                    This website serves as a foundation for my portfolio, showcasing my projects and experience.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="selfie.JPG" alt="Francisco Jair Hernandez Sanchez">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Francisco Jair Hernandez Sanchez | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
